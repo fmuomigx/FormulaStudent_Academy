@@ -1,18 +1,20 @@
 #include <stdio.h>
 #include <math.h>
 
-void initVars(){
-
-uint a=24,b=6,c=8;
-float result;
+float initVars(){
+unsigned int a=24,b=6,c=8;
+return (a/b)-(c/c);
 
 }
 
-void main(){
-
-	initVars();
-	while(1){
-		result=a/b;
-		printf("The result is: %f.2\n",&result);
+int main(){
+    float result;
+	result=initVars();
+	while(result!=3){
+		printf("Error, there is a mistake! Check the variables and the formula...");
 	}
+	printf("The result is: %.2f\n", result);
+
 }
+
+
